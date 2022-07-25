@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
@@ -48,12 +49,27 @@ class Util
         while (true)
         {
 
-            if (port<0||HasUsedPort.Contains(port))
+            if (port<0||HasUsedPort.Contains(port)|| HasUsedPort.Contains(port+1))
             {
                 port = random.Next(10801, 65535);
                 continue;
             }
             return port;
         }
+    }
+    public static bool UpdateAppSettings(string key, string value)
+    {
+        var _config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+        if (!_config.HasFile)
+        {
+            throw new ArgumentException("程序配置文件缺失！");
+        }
+        KeyValueConfigurationElement _key = _config.AppSettings.Settings[key];
+        if (_key == null)
+            _config.AppSettings.Settings.Add(key, value);
+        else
+            _config.AppSettings.Settings[key].Value = value;
+        _config.Save(ConfigurationSaveMode.Modified);
+        return true;
     }
 }

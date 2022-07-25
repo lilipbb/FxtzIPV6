@@ -37,18 +37,19 @@
             this.downText = new System.Windows.Forms.TextBox();
             this.connectRoomBtn = new System.Windows.Forms.Button();
             this.copyGameBtn = new System.Windows.Forms.Button();
+            this.settingBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // upText
             // 
-            this.upText.Location = new System.Drawing.Point(12, 31);
+            this.upText.Location = new System.Drawing.Point(12, 32);
             this.upText.Name = "upText";
             this.upText.Size = new System.Drawing.Size(412, 21);
             this.upText.TabIndex = 0;
             // 
             // createRoomBtn
             // 
-            this.createRoomBtn.Location = new System.Drawing.Point(112, 58);
+            this.createRoomBtn.Location = new System.Drawing.Point(112, 59);
             this.createRoomBtn.Name = "createRoomBtn";
             this.createRoomBtn.Size = new System.Drawing.Size(75, 23);
             this.createRoomBtn.TabIndex = 1;
@@ -59,7 +60,7 @@
             // copyRoomBtn
             // 
             this.copyRoomBtn.Enabled = false;
-            this.copyRoomBtn.Location = new System.Drawing.Point(234, 58);
+            this.copyRoomBtn.Location = new System.Drawing.Point(234, 59);
             this.copyRoomBtn.Name = "copyRoomBtn";
             this.copyRoomBtn.Size = new System.Drawing.Size(75, 23);
             this.copyRoomBtn.TabIndex = 2;
@@ -70,7 +71,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(10, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 12);
             this.label1.TabIndex = 3;
@@ -79,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 101);
+            this.label2.Location = new System.Drawing.Point(12, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 12);
             this.label2.TabIndex = 3;
@@ -87,14 +88,14 @@
             // 
             // downText
             // 
-            this.downText.Location = new System.Drawing.Point(12, 126);
+            this.downText.Location = new System.Drawing.Point(12, 113);
             this.downText.Name = "downText";
             this.downText.Size = new System.Drawing.Size(412, 21);
             this.downText.TabIndex = 4;
             // 
             // connectRoomBtn
             // 
-            this.connectRoomBtn.Location = new System.Drawing.Point(112, 154);
+            this.connectRoomBtn.Location = new System.Drawing.Point(112, 140);
             this.connectRoomBtn.Name = "connectRoomBtn";
             this.connectRoomBtn.Size = new System.Drawing.Size(75, 23);
             this.connectRoomBtn.TabIndex = 5;
@@ -105,7 +106,7 @@
             // copyGameBtn
             // 
             this.copyGameBtn.Enabled = false;
-            this.copyGameBtn.Location = new System.Drawing.Point(234, 154);
+            this.copyGameBtn.Location = new System.Drawing.Point(234, 140);
             this.copyGameBtn.Name = "copyGameBtn";
             this.copyGameBtn.Size = new System.Drawing.Size(75, 23);
             this.copyGameBtn.TabIndex = 6;
@@ -113,11 +114,22 @@
             this.copyGameBtn.UseVisualStyleBackColor = true;
             this.copyGameBtn.Click += new System.EventHandler(this.copyGameBtn_Click);
             // 
+            // settingBtn
+            // 
+            this.settingBtn.Location = new System.Drawing.Point(401, 3);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(23, 23);
+            this.settingBtn.TabIndex = 7;
+            this.settingBtn.Text = "▷";
+            this.settingBtn.UseVisualStyleBackColor = true;
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 193);
+            this.ClientSize = new System.Drawing.Size(437, 173);
+            this.Controls.Add(this.settingBtn);
             this.Controls.Add(this.copyGameBtn);
             this.Controls.Add(this.connectRoomBtn);
             this.Controls.Add(this.downText);
@@ -144,6 +156,7 @@
         private System.Windows.Forms.TextBox downText;
         private System.Windows.Forms.Button connectRoomBtn;
         private System.Windows.Forms.Button copyGameBtn;
+        private System.Windows.Forms.Button settingBtn;
     }
 }
 
