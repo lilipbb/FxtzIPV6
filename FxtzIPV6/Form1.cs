@@ -120,6 +120,7 @@ namespace FxtzIPV6
                         }
                         EndPoint remote = new IPEndPoint(ip, 0);
                         long pingtime = 0;
+                        var rcount = 0;
                         for (int i = 0; i < 10; i++)
                         {
                             var buf = new byte[8];
@@ -128,9 +129,10 @@ namespace FxtzIPV6
                             {
                                 var rtime = BitConverter.ToInt64(buf, 0);
                                 pingtime += (DateTime.UtcNow.Ticks - rtime);
+                                rcount++;
                             }
                         }
-                        pingtime /= 100000;
+                        if(pingtime>0) pingtime /= (10000*rcount);
                         if (pingtime < 1) pingtime = 1;
                         if (pingtime > 1000) pingtime = 1000;
                         ping = (short)pingtime;
