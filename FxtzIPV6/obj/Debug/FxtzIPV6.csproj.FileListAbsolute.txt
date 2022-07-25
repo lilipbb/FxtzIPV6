@@ -1,0 +1,11 @@
+E:\code\c#\FxtzIPV6\FxtzIPV6\bin\Debug\FxtzIPV6.exe.config
+E:\code\c#\FxtzIPV6\FxtzIPV6\bin\Debug\FxtzIPV6.exe
+E:\code\c#\FxtzIPV6\FxtzIPV6\bin\Debug\FxtzIPV6.pdb
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.csproj.AssemblyReference.cache
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.csproj.SuggestedBindingRedirects.cache
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.Form1.resources
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.Properties.Resources.resources
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.csproj.GenerateResource.cache
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.csproj.CoreCompileInputs.cache
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.exe
+E:\code\c#\FxtzIPV6\FxtzIPV6\obj\Debug\FxtzIPV6.pdb
